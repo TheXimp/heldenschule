@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kampfsystem – Heldenschule</title>
+<meta name="description" content="Schadensformel, Zeitleiste und Statuseffekte">
+<link rel="stylesheet" href="stil.css">
+</head>
+<body>
+<header class="kopf">
+  <a class="marke" href="index.html">Helden<span>schule</span></a>
+  <nav><a href="index.html">Überblick</a><a href="klassen.html">Klassen</a><a href="attacken.html">Attacken</a><a href="kampf.html" class='aktiv'>Kampfsystem</a><a href="begleiter.html">Begleiter</a><a href="superkaempfer.html">Ki-System</a></nav>
+</header>
+<main>
+<div class="titelzeile">
+  <h1>Kampfsystem</h1>
+  <p class="untertitel">Schadensformel, Zeitleiste und Statuseffekte</p>
+</div>
+<section><p class="fuehrung">Gekämpft wird fünf gegen fünf. Wer als Nächstes dran ist,
+entscheidet keine feste Runde, sondern eine Tempo-Zeitleiste: Jede Einheit sammelt Zeit entsprechend ihrem
+Tempo, und wer als Erster den Schwellwert überschreitet, handelt.</p></section>
+<section><h2>Schaden</h2>
+<div class="formel">Schaden = Angriff × Stärke × Angriff ÷ (Angriff + Verteidigung) × 0,9 × Zufall(0,9–1,1)</div>
+<p>Der Angriffswert steht zweimal in der Formel: einmal als Grundlage, einmal im Verhältnis zur Verteidigung.
+Dadurch wirken Wertunterschiede stärker, als man erwartet – 25% mehr Angriff bedeuten rund 40% mehr Schaden.</p>
+<ul>
+  <li><strong>Physisch oder speziell:</strong> Ob Angriff gegen Verteidigung oder Sp-Angriff gegen
+  Sp-Verteidigung gerechnet wird, entscheidet die Attacke.</li>
+  <li><strong>Volltreffer:</strong> 6% Grundchance, 15% bei Attacken mit hoher Krit-Rate, jeweils
+  anderthalbfacher Schaden.</li>
+  <li><strong>Größe:</strong> Nur wer <em>größer</em> ist als sein Ziel, schlägt härter – je Stufe 15% mehr
+  Schaden, dafür 5 Genauigkeit weniger.</li>
+  <li><strong>Verfehlen kostet den Zug.</strong></li>
+</ul></section>
+<section><h2>Werte-Stufen</h2>
+<p>Verstärkungen und Schwächungen verschieben einen Wert um Stufen zwischen −6 und +6.</p>
+<div class="formel">+1 Stufe = ×1,5 &nbsp;·&nbsp; +2 = ×2,0 &nbsp;·&nbsp; +6 = ×4,0 &nbsp;·&nbsp;
+−1 = ×0,67 &nbsp;·&nbsp; −6 = ×0,25</div>
+<p>Weil der Angriffswert doppelt in die Schadensformel eingeht, ist eine einzige Stufe deutlich mehr wert
+als die 50%, nach denen sie aussieht.</p></section>
+<section><h2>Statuseffekte</h2>
+<p>Statusattacken lösen ihren Effekt mit einer Wahrscheinlichkeit aus, die mit dem Tier steigt –
+von 15% auf Tier 1 bis 65% auf Tier 5.</p>
+<table><thead><tr><th>Effekt</th><th>Wirkung</th></tr></thead><tbody>
+<tr><td><strong>Gift</strong></td><td>Schaden pro Zug, wird mit der Zeit schwächer</td></tr><tr><td><strong>Verbrennung</strong></td><td>8% der maximalen HP pro Zug, klingt zufällig ab</td></tr><tr><td><strong>Einfrieren</strong></td><td>Der Zug fällt aus</td></tr><tr><td><strong>Betäubung</strong></td><td>Der Zug fällt aus</td></tr><tr><td><strong>Lähmung</strong></td><td>Der nächste Zug fällt aus</td></tr><tr><td><strong>Verlangsamung</strong></td><td>Tempo sinkt um zwei Stufen</td></tr>
+</tbody></table></section>
+<section><h2>Zeitleiste</h2>
+<p>Jede Einheit sammelt pro Takt ihr Tempo als Zeit an. Wer 1000 erreicht, ist dran – bei mehreren
+Bereiten zuerst der mit dem höchsten Wert. Ohne diese Regel würden schnelle Einheiten die Leiste blockieren
+und alle langsamen verhungern.</p>
+<p>Die Anzeige rechnet die nächsten 24 Züge im Voraus aus und fasst aufeinanderfolgende Züge derselben
+Einheit zu einem Stapel zusammen.</p></section>
+<section><h2>Besondere Mechaniken</h2>
+<div class="raster">
+  <div class="feld"><h3>Aufladung</h3><p>Die Attacke lädt eine Runde und feuert im nächsten Zug automatisch.</p></div>
+  <div class="feld"><h3>Konter</h3><p>Der nächste Angreifer bekommt einen Anteil des Schadens zurück.</p></div>
+  <div class="feld"><h3>Schutz</h3><p>Blockt den nächsten eingehenden Angriff vollständig.</p></div>
+  <div class="feld"><h3>Fesselung</h3><p>Das Ziel nimmt über mehrere Züge Schaden und muss sich befreien.</p></div>
+  <div class="feld"><h3>Prozent-Schaden</h3><p>Ein Anteil der aktuellen HP, unabhängig von der Verteidigung –
+  die Antwort auf sehr defensive Gegner.</p></div>
+  <div class="feld"><h3>Selbstzerstörung</h3><p>Enormer Schaden, der Anwender fällt.</p></div>
+</div></section>
+</main>
+<footer>
+  <p>Heldenschule · Sammel-RPG in Godot 4.6 · Stand 13.08.2026</p>
+  <p class="klein">Diese Seite wird aus den Spieldaten erzeugt: <code>python werkzeuge/webseite_bauen.py</code></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Heldenschule</title>
+<meta name="description" content="Ein Sammel-RPG mit zufällig erzeugten Helden">
+<link rel="stylesheet" href="stil.css">
+</head>
+<body>
+<header class="kopf">
+  <a class="marke" href="index.html">Helden<span>schule</span></a>
+  <nav><a href="index.html" class='aktiv'>Überblick</a><a href="klassen.html">Klassen</a><a href="attacken.html">Attacken</a><a href="kampf.html">Kampfsystem</a><a href="begleiter.html">Begleiter</a><a href="superkaempfer.html">Ki-System</a></nav>
+</header>
+<main>
+<div class="titelzeile">
+  <h1>Heldenschule</h1>
+  <p class="untertitel">Ein Sammel-RPG mit zufällig erzeugten Helden</p>
+</div>
+<section class="held">
+<p class="fuehrung">Heldenschule ist ein Sammel-RPG mit rundenbasierten 5-gegen-5-Kämpfen.
+Jeder Charakter wird zufällig erzeugt – Klasse, Unterklasse, Themen, Rasse, Körperbau, Talente
+und Waffen entstehen beim Würfeln und bestimmen zusammen, welche Attacken er im Laufe von
+100 Leveln überhaupt lernen kann.</p>
+</section>
+<div class="kacheln"><div class="kachel"><span class="zahl">5</span><span class="was">Klassen</span></div><div class="kachel"><span class="zahl">24</span><span class="was">Unterklassen</span></div><div class="kachel"><span class="zahl">1.141</span><span class="was">Attacken</span></div><div class="kachel"><span class="zahl">141</span><span class="was">Attacken-Pools</span></div><div class="kachel"><span class="zahl">36</span><span class="was">Themen</span></div><div class="kachel"><span class="zahl">20</span><span class="was">Kampfkünste</span></div><div class="kachel"><span class="zahl">28</span><span class="was">Waffen</span></div><div class="kachel"><span class="zahl">11</span><span class="was">Begleiter-Familien</span></div></div>
+<section><h2>Was den Charakter ausmacht</h2>
+<div class="raster">
+  <div class="feld"><h3>Klasse &amp; Unterklasse</h3><p>Fünf Klassen liefern die Grundwerte, 24 Unterklassen
+  verschieben sie und geben ein eigenes Talent. Mit 30% Chance kommt eine zweite Unterklasse dazu –
+  dann werden beide Profile gemittelt.</p></div>
+  <div class="feld"><h3>Themen</h3><p>Ein bis zwei Themen aus 36 Möglichkeiten. Das erste Thema liegt immer
+  bei mindestens vier Sternen und bildet die Kernidentität.</p></div>
+  <div class="feld"><h3>Körperbau</h3><p>Rasse, Geschlecht, Kampfklasse und Körper-Tags entscheiden über
+  Aussehen <em>und</em> Attacken: Wer Krallen hat, lernt Krallen-Attacken.</p></div>
+  <div class="feld"><h3>Talente</h3><p>Jedes Thema, jede Waffe, jedes Körperteil ist ein Talent von 1 bis 5
+  Sternen. Die Sterne steuern, wie wahrscheinlich hohe Attacken-Tiers gezogen werden.</p></div>
+  <div class="feld"><h3>Seltenheit</h3><p>Fünf Stufen von Gewöhnlich bis Legendär. Sie verschiebt nicht die
+  Werte, sondern die Talent-Würfe – seltene Charaktere haben bessere Anlagen.</p></div>
+  <div class="feld"><h3>Begleiter</h3><p>Bändiger kämpfen durch Evox, Byteon-Bändiger durch ein sich im Kampf
+  entwickelndes Byteon, Beschwörer rufen eigene Kämpfer ins Feld.</p></div>
+</div></section>
+<section><h2>Seltenheit</h2>
+<p>Die Seltenheit bestimmt den Bereich, in dem die Talente ausgewürfelt werden.</p>
+<table><thead><tr><th>Stufe</th><th>Häufigkeit</th><th>Talent-Wurf</th></tr></thead><tbody><tr><td><strong>Gewöhnlich</strong></td><td>40%</td><td>10–70</td></tr><tr><td><strong>Ungewöhnlich</strong></td><td>30%</td><td>20–80</td></tr><tr><td><strong>Selten</strong></td><td>15%</td><td>30–90</td></tr><tr><td><strong>Episch</strong></td><td>10%</td><td>40–100</td></tr><tr><td><strong>Legendär</strong></td><td>5%</td><td>50–100</td></tr></tbody></table></section>
+<section><h2>Die Systeme im Überblick</h2>
+<div class="raster">
+  <div class="feld"><h3><a href="klassen.html">Klassen</a></h3><p>Alle Grundwerte und was jede Unterklasse
+  daraus macht.</p></div>
+  <div class="feld"><h3><a href="attacken.html">Attacken</a></h3><p>Wie eine Attacke entsteht, welche Pools es
+  gibt und die vollständige, durchsuchbare Liste.</p></div>
+  <div class="feld"><h3><a href="kampf.html">Kampfsystem</a></h3><p>Schadensformel, Tempo-Zeitleiste,
+  Statuseffekte und die Stufen-Mechanik.</p></div>
+  <div class="feld"><h3><a href="begleiter.html">Begleiter</a></h3><p>Evox, Byteon und die beiden
+  Beschwörer-Varianten.</p></div>
+  <div class="feld"><h3><a href="superkaempfer.html">Ki-System</a></h3><p>Die Unterklasse Superkämpfer mit
+  eigener Ressource, 54 Techniken und dem Ki-Ausbruch.</p></div>
+</div></section>
+</main>
+<footer>
+  <p>Heldenschule · Sammel-RPG in Godot 4.6 · Stand 13.08.2026</p>
+  <p class="klein">Diese Seite wird aus den Spieldaten erzeugt: <code>python werkzeuge/webseite_bauen.py</code></p>
+</footer>
+
+</body>
+</html>
